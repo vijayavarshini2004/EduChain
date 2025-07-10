@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduChain Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>🎓 EduChain: Certificate Blockchain</h1>
+
+    <form action="/add_transaction" method="post">
+        <input type="text" name="student" placeholder="Student Name" required>
+        <input type="text" name="degree" placeholder="Degree Awarded" required>
+        <input type="text" name="institution" placeholder="Institution" required>
+        <button type="submit">Add Certificate</button>
+    </form>
+
+    <a href="/mine_block"><button>⛏️ Mine Block</button></a>
+    <a href="/sync_chain"><button>🔄 Sync Chain</button></a>
+
+    <form action="/register_node" method="post">
+        <input type="text" name="node_url" placeholder="http://127.0.0.1:5002" required>
+        <button type="submit">🔗 Register Node</button>
+    </form>
+
+    <h2>📦 Blockchain:</h2>
+    {% for block in chain %}
+        <div class="block">
+            <p><strong>Index:</strong> {{ block.index }}</p>
+            <p><strong>Transactions:</strong> {{ block.transactions }}</p>
+            <p><strong>Proof:</strong> {{ block.proof }}</p>
+            <p><strong>Previous Hash:</strong> {{ block.previous_hash }}</p>
+        </div>
+    {% endfor %}
+
+    <h3>🌐 Connected Nodes:</h3>
+    <ul>
+        {% for node in nodes %}
+        <li>{{ node }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

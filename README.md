@@ -40,10 +40,11 @@ edu_chain/
 
 🛠️ How to Run the Simulation
 
-✅ Step 1: Clone the Repository
+
 
 ```bash
-git clone <your-repo-link>
+✅ Step 1: Clone the Repository
+git clone [<your-repo-link>](https://github.com/vijayavarshini2004/EduChain.git)
 cd edu_chain
 
 ✅ Step 2: Set up Virtual Environment

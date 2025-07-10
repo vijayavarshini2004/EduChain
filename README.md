@@ -27,16 +27,16 @@ EduChain is a simple, interactive simulation of a Peer-to-Peer (P2P) blockchain 
 
 📁 Project Structure
 edu_chain/
-├── blockchain.py # Core blockchain logic (transactions, mining, consensus)
-├── node.py  Flask app for Node 1 (port 5001)
-├── node2.py  Node 2 (port 5002)
-├── node3.py Node 3 (port 5003)
-├── node4.py  Node 4 (port 5004)
-├── templates/
-│ └── index.html # Frontend UI template
-├── static/
-│ └── style.css # UI styling
-└── README.md
+     blockchain.py # Core blockchain logic (transactions, mining, consensus)
+     node.py  Flask app for Node 1 (port 5001)
+     node2.py  Node 2 (port 5002)
+     node3.py Node 3 (port 5003)
+     node4.py  Node 4 (port 5004)
+     templates/
+        index.html # Frontend UI template
+     static/
+        style.css # UI styling
+    README.md
 
 🛠️ How to Run the Simulation
 
